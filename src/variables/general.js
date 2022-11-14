@@ -1,24 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-// ##############################
-// // // tasks list for Tasks card in Dashboard view
-// #############################
-
 const tasks = [
   {
     checked: true,
@@ -38,7 +17,7 @@ const tasks = [
 // // // table head data and table body data for Tables view
 // #############################
 
-const thead = ["Name", "Country", "City", "Salary"];
+const thead = ["Name", "Phone Number", "City", "Salary"];
 const tbody = [
   {
     className: "table-success",
@@ -67,7 +46,36 @@ const tbody = [
   }
 ];
 
+const thead2 = ["Name", "Phone Number", "Transaction Code", "Amount", "Package", "State",];
+const tbody2 = [
+  {
+    className: "table-success",
+    data: ["Dakota Rice", "0720585858", "IHUH57887F", "$36,738", "Standard", "Successful"]
+  },
+  {
+    className: "",
+    data: ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789", "Standard", "Successful"]
+  },
+  {
+    className: "table-info",
+    data: ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142", "Standard", "Successful"]
+  },
+  {
+    className: "",
+    data: ["Philip Chaney", "Korea, South", "Overland Park", "$38,735", "Standard", "Successful"]
+  },
+  {
+    className: "table-danger",
+    data: ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542", "Standard", "Successful"]
+  },
+  { className: "", data: ["Mason Porter", "Chile", "Gloucester", "$78,615", "Standard", "Successful"] },
+  {
+    className: "table-warning",
+    data: ["Jon Porter", "Portugal", "Gloucester", "$98,615", "Standard", "Successful"]
+  }
+];
+
 // tasks list for Tasks card in Dashboard view
 // data for <thead> of table in TableList view
 // data for <tbody> of table in TableList view
-export { tasks, thead, tbody };
+export { tasks, thead, tbody, tbody2, thead2 };

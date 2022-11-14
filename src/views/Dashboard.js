@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
@@ -26,6 +9,8 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
+  CardImg,
+  CardText,
   Row,
   Col,
   UncontrolledDropdown,
@@ -37,11 +22,11 @@ import {
   Label,
   FormGroup,
   Input,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 // core components
-import PanelHeader from "components/PanelHeader/PanelHeader.js";
+import PanelHeader from "components/PanelHeader/PanelHeader.js"; ``
 
 import {
   dashboardPanelChart,
@@ -53,13 +38,24 @@ import {
 function Dashboard() {
   return (
     <>
+
       <PanelHeader
-        size="lg"
+        size="xlg"
+
         content={
-          <Line
-            data={dashboardPanelChart.data}
-            options={dashboardPanelChart.options}
-          />
+          <div>
+            {/* <Card style={{ height: '5rem', width: '20rem', background: 'rgba(0, 0, 0, 0.1)', color: 'white', }}>
+              <CardBody>
+                <CardTitle><h4 className="title">Revenue</h4></CardTitle>
+                <CardText>Total Earnings to date: KES.111,000.</CardText>
+                <CardText>Earnings this month: KES.11,000.</CardText>
+              </CardBody>
+            </Card> */}
+            <Line
+              data={dashboardPanelChart.data}
+              options={dashboardPanelChart.options}
+            />
+          </div>
         }
       />
       <div className="content">
@@ -67,8 +63,8 @@ function Dashboard() {
           <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Global Sales</h5>
-                <CardTitle tag="h4">Shipped Products</CardTitle>
+                <h5 className="card-category">Customer Support</h5>
+                <CardTitle tag="h4">Open Tickets</CardTitle>
                 <UncontrolledDropdown>
                   <DropdownToggle
                     className="btn-round btn-outline-default btn-icon"
@@ -106,7 +102,7 @@ function Dashboard() {
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">2021 Sales</h5>
-                <CardTitle tag="h4">All products</CardTitle>
+                <CardTitle tag="h4">Transactions</CardTitle>
                 <UncontrolledDropdown>
                   <DropdownToggle
                     className="btn-round btn-outline-default btn-icon"
@@ -143,8 +139,8 @@ function Dashboard() {
           <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Email Statistics</h5>
-                <CardTitle tag="h4">24 Hours Performance</CardTitle>
+                <h5 className="card-category">User Statistics</h5>
+                <CardTitle tag="h4">Customer Acquisition</CardTitle>
               </CardHeader>
               <CardBody>
                 <div className="chart-area">
@@ -166,7 +162,7 @@ function Dashboard() {
           <Col xs={12} md={6}>
             <Card className="card-tasks">
               <CardHeader>
-                <h5 className="card-category">Backend Development</h5>
+                <h5 className="card-category">Customer Support</h5>
                 <CardTitle tag="h4">Tasks</CardTitle>
               </CardHeader>
               <CardBody>

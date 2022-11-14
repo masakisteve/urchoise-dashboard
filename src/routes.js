@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
@@ -23,6 +6,12 @@ import TableList from "views/TableList.js";
 import Maps from "views/Maps.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
+import CustomerInformation from "views/CustomerInformation.js";
+import Categories from "views/Categories.js";
+import AdvertAttributes from "views/AdvertAttributes.js";
+import Transactions from "views/Transactions.js";
+import Packages from "views/Packages.js";
+import CustomerSupport from "views/CustomerSupport.js";
 
 var dashRoutes = [
   {
@@ -30,6 +19,48 @@ var dashRoutes = [
     name: "Dashboard",
     icon: "design_app",
     component: Dashboard,
+    layout: "/admin"
+  },
+  {
+    path: "/customer-page",
+    name: "Customer Information",
+    icon: "users_circle-08",
+    component: CustomerInformation,
+    layout: "/admin"
+  },
+  {
+    path: "/categories",
+    name: "Categories",
+    icon: "design_image",
+    component: Categories,
+    layout: "/admin"
+  },
+  {
+    path: "/advert-attributes",
+    name: "Advert Attributes",
+    icon: "design_image",
+    component: AdvertAttributes,
+    layout: "/admin"
+  },
+  {
+    path: "/transactions",
+    name: "Transactions",
+    icon: "design_image",
+    component: Transactions,
+    layout: "/admin"
+  },
+  {
+    path: "/packages",
+    name: "Packages",
+    icon: "design_image",
+    component: Packages,
+    layout: "/admin"
+  },
+  {
+    path: "/customer-support",
+    name: "Customer Support",
+    icon: "design_image",
+    component: CustomerSupport,
     layout: "/admin"
   },
   {
